@@ -1,0 +1,56 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		"types": ["vite/client"],
+		"baseUrl": ".",
+		"allowJs": false,
+		"noImplicitAny": true,
+		"skipLibCheck": false,
+		"esModuleInterop": false,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"module": "commonjs",
+		"moduleResolution": "Node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"typeRoots": ["./src/typings", "./node_modules/@types"],
+		"noEmit": true,
+		"jsx": "react",
+		"paths": {
+			"@src/*": ["src/*"]
+		}
+	},
+	"include": ["src"],
+	"exclude": ["node_modules"]
+}
+
+// OPTIONAL SETTINGS
+// {
+//   "compilerOptions": {
+//     "target": "ES6",
+//     "module": "commonjs",
+//     "lib": ["ESNext", "DOM"],
+//     "allowJs": true,
+//     "outDir": "dist",
+//     "rootDir": ".",
+//     "removeComments": true,
+//     "strict": true,
+//     "noImplicitAny": true,
+//     "moduleResolution": "node",
+//     "baseUrl": ".",
+//     "paths": {
+//       "@src/*": ["src/*"]
+//     },
+//     "esModuleInterop": true,
+//     "experimentalDecorators": true,
+//     "emitDecoratorMetadata": true,
+//     "skipLibCheck": true,
+//     "forceConsistentCasingInFileNames": true,
+//     "typeRoots": ["./src/typings", "./node_modules/@types"],
+//     "resolveJsonModule": true
+//   },
+//   "exclude": ["node_modules", "dist"],
+//   "include": ["src"]
+// }
